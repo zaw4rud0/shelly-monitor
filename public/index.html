@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Shelly Plus H&T Visualizer</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/hammerjs"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-zoom"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/gg-sans-2">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+</head>
+<body>
+<main>
+    <div class="widget-container">
+        <div class="widget" id="currentDataWidget">
+            <h2>Shelly Status</h2>
+            <div id="currentMeasurements">
+                <p>Current temperature: <span id="currentTemperature">Loading...</span>°C</p>
+                <p>Current relative humidity: <span id="currentHumidity">Loading...</span>%</p>
+            </div>
+            <div id="batteryStatus">
+                <p>Battery charge: <span id="currentCharge">Loading...</span>%</p>
+            </div>
+            <script src="js/currentData.js"></script>
+        </div>
+        <div class="widget">
+            <canvas id="sensorDataChart"></canvas>
+            <script src="js/temperatureHumidityChart.js"></script>
+        </div>
+        <div class="widget">
+            <canvas id="shellyBatteryChart"></canvas>
+            <script src="js/batteryChargeChart.js"></script>
+        </div>
+    </div>
+</main>
+</body>
+</html>
