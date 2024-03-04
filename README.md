@@ -36,7 +36,7 @@ DB_PASS=shelly123
 DB_NAME=measurements
 PORT=443
 ```
-Note that you can replace any of the fields as you desire as long as you change it in the code as well.
+Note that you can change the value of the above fields as you desire as long as you change it in the code as well.
 
 4. Database setup
 ```sql
