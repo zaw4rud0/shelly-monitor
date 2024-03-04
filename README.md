@@ -1,4 +1,4 @@
-# shelly-monitor
+# Shelly Monitor
 
 A simple monitor for a Shelly Plus H&T device
 
