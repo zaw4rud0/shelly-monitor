@@ -37,6 +37,7 @@ DB_NAME=measurements
 PORT=443
 ```
 Note that you can replace any of the fields as you desire as long as you change it in the code as well.
+
 4. Database setup
 ```sql
 mariadb -u shelly -p measurements < path/to/database_setup.sql
